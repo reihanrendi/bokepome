@@ -118,7 +118,14 @@ const jsonLd = {
                 '@type': 'Person',
                 name: 'admin',
                 url: 'https://bokepometv.pages.dev'
-              }
+              },
+        interactionStatistic: {
+            '@type': `InteractionCounter`,
+            interactionType: {
+                '@type': `ReadAction`,
+                userInteractionCount: `${file.views}`
+            }  
+        }
         }
     return (
         <div className="grid col-span-full gap-4 md:gap-4 md:mx-10">
