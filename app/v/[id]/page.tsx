@@ -91,7 +91,14 @@ const jsonLd = {
         embedUrl: `https://${upstream}/e/${file.filecode}`,
         uploadDate: new Date(
             file.uploaded + ".000Z"
-        ).toISOString()
+        ).toISOString(),
+        interactionStatistic: {
+            '@type': `InteractionCounter`,
+            interactionType: {
+                '@type': `WatchAction`,
+                userInteractionCount: `9928`
+            }  
+        }
         }
         const jsonLd2 = {
         '@context': 'https://schema.org',
