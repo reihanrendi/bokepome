@@ -96,7 +96,7 @@ const jsonLd = {
             '@type': `InteractionCounter`,
             interactionType: {
                 '@type': `WatchAction`,
-                userInteractionCount: `9928`
+                userInteractionCount: `${file.views}`
             }  
         }
         }
