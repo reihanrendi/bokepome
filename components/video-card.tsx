@@ -12,7 +12,7 @@ const VideoCard = ({ video }: any) => {
     const jsonLd = {
         "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": `${video.title}`,
+    "headline": `${video.title}`,
     "url": `https://bokepometv.pages.dev/v/${video.file_code}`,
     "image": `${video.single_img}`
     }
