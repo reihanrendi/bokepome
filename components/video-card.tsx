@@ -9,20 +9,9 @@ import React from "react";
 import Thumbnail from "./thumbnail";
 
 const VideoCard = ({ video }: any) => {
-    const jsonLd = {
-        "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": `${video.title}`,
-    "relatedLink": `https://bokepometv.pages.dev/v/${video.file_code}`,
-    "image": `${video.single_img}`
-    }
     return (
         <Card className="border-0 rounded-none md:border-[1px] md:rounded-md transform transition duration-200 md:hover:scale-[101%] md:hover:shadow-lg">
             <div className="relative">
-            <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
                 <Link
                     href={`/v/${video.file_code}`}
                     title={`Watch ${video.title}`}
