@@ -11,7 +11,7 @@ import Thumbnail from "./thumbnail";
 const VideoCard = ({ video }: any) => {
     const jsonLd = {
         "@context": "https://schema.org",
-    "@type": "WebPage",
+    "@type": "RelatedLink",
     "headline": `${video.title}`,
     "url": `https://bokepometv.pages.dev/v/${video.file_code}`,
     "image": `${video.single_img}`
