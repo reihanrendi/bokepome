@@ -96,6 +96,7 @@ const jsonLd = {
             '@type': `InteractionCounter`,
             interactionType: {
                 '@type': `WatchAction`,
+                target: `https://bokepometv.pages.dev/v/${file.filecode}`,
                 userInteractionCount: `${file.views}`
             }  
         }
@@ -123,6 +124,7 @@ const jsonLd = {
             '@type': `InteractionCounter`,
             interactionType: {
                 '@type': `ReadAction`,
+                target: `https://bokepometv.pages.dev/v/${file.filecode}`,
                 userInteractionCount: `${file.views}`
             }  
         }
