@@ -94,10 +94,10 @@ const jsonLd = {
         ).toISOString(),
         interactionStatistic: {
             '@type': `InteractionCounter`,
+                userInteractionCount: `${file.views}`,
             interactionType: {
                 '@type': `WatchAction`,
-                target: `https://bokepometv.pages.dev/v/${file.filecode}`,
-                userInteractionCount: `${file.views}`
+                target: `https://bokepometv.pages.dev/v/${file.filecode}`
             }  
         }
         }
