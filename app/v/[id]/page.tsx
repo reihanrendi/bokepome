@@ -129,6 +129,17 @@ const jsonLd = {
             }  
         }
         }
+        const jsonLd3 = {
+            '@context': 'https://schema.org', 
+            '@type': 'Book', 
+            'name': `${file.title} - ${SITENAME}`, 
+            'aggregateRating': {
+            '@type': 'AggregateRating',	
+                'ratingValue': '5',	
+                'ratingCount': `${file.views}`,	
+                'bestRating': '5',	
+                'worstRating': '1' }
+        }
     return (
         <div className="grid col-span-full gap-4 md:gap-4 md:mx-10">
         <section>
@@ -140,6 +151,10 @@ const jsonLd = {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd2) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd3) }}
         />
         {/* ... */}
         </section>
