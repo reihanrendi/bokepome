@@ -42,10 +42,7 @@ const SideNav = ({ folders }: { folders: any }) => {
                         <Link href="/about" role="menuitem">
                             <SheetClose>About</SheetClose>
                         </Link>
-                        <Link href="/liked" role="menuitem">
-                            <SheetClose>My Likes</SheetClose>
-                        </Link>
-                        <Link href="/" role="menuitem">
+                       <Link href="/" role="menuitem">
                             <SheetClose>Home</SheetClose>
                         </Link>
                     </SheetDescription>
@@ -152,13 +149,6 @@ const Navbar = async () => {
             </div>
             <div className="flex flex-row space-x-2">
                 <div className="hidden md:flex items-center gap-4">
-                    <Link
-                        href="/liked"
-                        className="hover:bg-accent px-2 py-1.5 rounded-md"
-                        aria-label="Open liked videos"
-                    >
-                        Liked Videos
-                    </Link>
                     <NavMenu folders={folders}></NavMenu>
                 </div>
                 <SearchInput className="hidden md:block w-full md:w-[260px] lg:w-[300px]" />
